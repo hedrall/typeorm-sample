@@ -1,0 +1,49 @@
+{
+  "name": "typeorm-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dayjs": "^1.8.21",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.19",
+    "typeorm": "^0.2.24"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^13.7.7",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.5",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedrall/typeorm-sample.git"
+  },
+  "homepage": "https://github.com/hedrall/typeorm-sample#readme"
+}
