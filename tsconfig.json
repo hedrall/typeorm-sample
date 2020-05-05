@@ -3,7 +3,7 @@
     "target":"ES2019",
     "module": "commonjs",
     "types": ["node"],
-    "lib": ["dom","es2015","es2016", "es2017.object", "es2017.string", "es2019"],
+    "lib": [],
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
